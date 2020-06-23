@@ -24,4 +24,3 @@ before_install:
 script:
   - CC="$CC" CXX="$CXX" cmake .
   - make -j4 VERBOSE=1
-  - make -j4 test ARGS=-V
