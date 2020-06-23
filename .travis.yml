@@ -18,7 +18,8 @@ matrix:
       compiler: clang
       env: CXX="clang++" CC="clang" BUILD_TYPE=release
 
-before_install: ./install_dependencies.sh
+before_install:
+  - chmod +x ./install_dependencies.sh && ./install_dependencies.sh
 
 script:
   - CC="$CC" CXX="$CXX" cmake .
