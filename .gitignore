@@ -1,9 +1,9 @@
 .idea
 *.o
 test/*.o
-build
+build*
 /bin
 
 cmake-*
 test
-
+.clang-format
