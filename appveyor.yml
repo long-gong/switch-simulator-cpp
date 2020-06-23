@@ -1,0 +1,10 @@
+dependency:
+  - C++ 11
+  - lemon C++ (only for MWM)
+
+build:
+  Mac_or_Linux:
+    - git clone <url_of_this_rep>
+    - cd lws-latest
+    - python ./build.py -a
+  Windows: not supported yet

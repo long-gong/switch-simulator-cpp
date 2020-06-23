@@ -1,0 +1,35 @@
+Delay_vs_loads_QPS_Buffer_B5:
+  simulator: [QPS_iSLIP_sim, QPS_Serena_sim]
+  fixed_args: -m 6000 -p 32 -v 1 -s 3982350082 -B 5
+
+Delay_vs_loads_QPS_Buffer_B3:
+  simulator: [QPS_iSLIP_sim, QPS_Serena_sim]
+  fixed_args: -m 6000 -p 32 -v 1 -s 3982350082 -B 3
+  
+Delay_vs_burst_size_QPS_SERENA_B3:
+  simulator: [QPS_Serena_sim, QPP_QPA_Serena_sim]
+  fixed_args: -m 6000 -l 0.95 -p 32 -v 1 -s 123934854 -B 3
+  fixed_args_with_multiple_values:
+    - arg: b
+      values: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
+
+Delay_vs_burst_size_QPS_SERENA_B5:
+  simulator: [QPS_Serena_sim, QPP_QPA_Serena_sim]
+  fixed_args: -m 6000 -l 0.95 -p 32 -v 1 -s 123934854 -B 5
+  fixed_args_with_multiple_values:
+    - arg: b
+      values: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
+
+Delay_vs_burst_size_QPS_iSLIP_B3:
+  simulator: [QPS_iSLIP_sim, QPP_QPA_sim]
+  fixed_args: -m 6000 -l 0.75 -p 32 -v 1 -s 123934854 -B 3
+  fixed_args_with_multiple_values:
+    - arg: b
+      values: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
+
+Delay_vs_burst_size_QPS_iSLIP_B5:
+  simulator: [QPS_iSLIP_sim, QPP_QPA_sim]
+  fixed_args: -m 6000 -l 0.75 -p 32 -v 1 -s 123934854 -B 5
+  fixed_args_with_multiple_values:
+    - arg: b
+      values: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]

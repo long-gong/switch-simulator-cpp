@@ -1,0 +1,1 @@
+add_executable(ss_w_fqps_serena FQPS_Serena_sim.cpp $<TARGET_OBJECTS:HDR_OBJ>)

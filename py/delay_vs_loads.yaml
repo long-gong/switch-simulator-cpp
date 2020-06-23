@@ -1,0 +1,8 @@
+Delay_vs_loads_benchmerks:
+  simulator: [O1_sim, MWM_sim, Serena_sim, iLQF_sim, iSLIP_sim, iSLIP_ShakeUp_sim]
+  fixed_args: -m 6000 -p 32 -v 1 -s 3982350082
+
+Delay_vs_loads_QPS_Buffer:
+  simulator: [QPP_QPA_iSLIP_sim, QPP_QPA_Serena_sim, QPS_iSLIP_sim, QPS_Serena_sim]
+  fixed_args: -m 6000 -p 32 -v 1 -s 3982350082 
+
