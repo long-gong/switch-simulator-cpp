@@ -1,6 +1,6 @@
 # SWITCH SIMULATOR 
 
-[![Build Status](https://travis-ci.org/long-gong/switch-simulator.svg?branch=master)](https://travis-ci.org/long-gong/switch-simulator)
+[![Build Status](https://travis-ci.org/long-gong/switch-simulator-cpp.svg?branch=master)](https://travis-ci.org/long-gong/switch-simulator-cpp)
 
 Simulation codes (full version), C++ version of [our old simulation codes in C](https://github.com/long-gong/switch-simulator) and adding more benchmark algorithms and more "features" (e.g., P95 delay), for our switching paper:
 
